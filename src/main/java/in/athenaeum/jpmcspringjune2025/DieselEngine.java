@@ -1,8 +1,10 @@
 package in.athenaeum.jpmcspringjune2025;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component("dieselEngine")
+@Component
+@Qualifier("de")
 public class DieselEngine implements Engine {
     @Override
     public void start() {

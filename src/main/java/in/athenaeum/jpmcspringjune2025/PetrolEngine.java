@@ -1,10 +1,12 @@
 package in.athenaeum.jpmcspringjune2025;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component("petrolEngine")
+@Component
+@Qualifier("pe")
 public class PetrolEngine implements Engine {
     public PetrolEngine() {
         System.out.println("PetrolEngine constructor");
