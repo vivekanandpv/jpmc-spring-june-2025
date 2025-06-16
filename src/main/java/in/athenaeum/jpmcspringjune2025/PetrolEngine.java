@@ -4,7 +4,7 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("petrolEngine")
 public class PetrolEngine implements Engine {
     public PetrolEngine() {
         System.out.println("PetrolEngine constructor");
