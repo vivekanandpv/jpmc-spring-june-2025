@@ -5,7 +5,6 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class PetrolEngine implements Engine {
     public PetrolEngine() {
         System.out.println("PetrolEngine constructor");
@@ -14,7 +13,7 @@ public class PetrolEngine implements Engine {
 
     @Override
     public void start() {
-        
+        System.out.println("Petrol Engine starts...");
     }
 
     @Override

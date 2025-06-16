@@ -10,13 +10,16 @@ import java.util.Locale;
 @RestController
 public class SampleApi {
     private final MessageSource messageSource;
+    private final Engine engine;
 
-    public SampleApi(MessageSource messageSource) {
+    public SampleApi(MessageSource messageSource, Engine engine) {
         this.messageSource = messageSource;
+        this.engine = engine;
     }
 
     @GetMapping
     public String get(@RequestHeader(name = "Accept-Language", required = false) Locale locale) {
+        engine.start();
         return messageSource.getMessage("greeting.hello", null, locale);
     }
 }
