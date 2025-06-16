@@ -4,7 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="petrolEngine" class="in.athenaeum.jpmcspringjune2025.PetrolEngine">
-        
     </bean>
 
     <bean id="dieselEngine" class="in.athenaeum.jpmcspringjune2025.DieselEngine">

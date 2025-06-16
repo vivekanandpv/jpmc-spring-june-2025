@@ -1,4 +1,7 @@
 package in.athenaeum.jpmcspringjune2025;
 
-public class Engine {
+public interface Engine {
+    void start();
+    
+    void stop();
 }
